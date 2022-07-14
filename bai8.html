@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>game doan so</title>
+</head>
+<body>
+<button onclick="f()">Start</button>
+<script>
+
+    function f(){
+        let count=1
+    let n=+prompt('So ban muon doan trong khoang lon nhat la bao nhieu')
+    var m=Math.floor(n*Math.random())
+
+    let k=+prompt('nhap so ban doan')
+    while (k!=m && count<=3){
+        count++
+        if (k>m){
+            k=+prompt('be hon'+k)
+        }else {
+            k=+prompt('lon hon'+k)
+        }
+
+    }  if (count<=3){
+        alert('you win')
+    }else{alert('No more turn.You lose.Try again. Number is'+m)}
+
+
+    }
+
+</script>
+</body>
+</html>
